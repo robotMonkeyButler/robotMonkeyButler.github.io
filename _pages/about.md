@@ -29,4 +29,6 @@ I am currently a junior undergraduate student at ShanghaiTech University and an 
 
 Previously, I worked under the guidance of <a href='https://angelicaiaviles.wordpress.com/'> Prof. Angelica Aviles-Rivero </a> at Cambridge University and Tsinghua University YMSC. I acted as an undergraduate research assistant in <a href='https://xiong-group.com/'> WiSe Lab</a> advised by <a href='https://xiong-group.com/people/'>Prof. Ze Xiong</a> from Sept. 2023 to Sept. 2024. I also interned at Shanghai AI Laboratory, focusing on large language models application.
 
+This page is still under development. You can find me on [LinkedIn](https://www.linkedin.com/in/zhaoyining/)
+
 
