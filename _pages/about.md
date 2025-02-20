@@ -9,7 +9,7 @@ profile:
   image: IMG_0521.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    Taken at Miami Bench, Florida, USA
+    Taken at Miami Beach, Florida, USA
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -25,10 +25,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a junior undergraduate student at ShanghaiTech University and an exchange student at UIUC, majoring in computer science. I am very fortunate to join the UIUC U Lab advised by <a href='https://cs.stanford.edu/~jiaxuan/'>Prof. Jiaxuan You</a> and mentor <a href='https://haofeiyu.me/'>Mr. Haofei Yu</a>.
+I am currently a junior undergraduate student at ShanghaiTech University and an exchange student at UIUC, majoring in computer science. I am very fortunate to join the UIUC U Lab, advised by <a href='https://cs.stanford.edu/~jiaxuan/'>Prof. Jiaxuan You</a> and mentor <a href='https://haofeiyu.me/'>Mr. Haofei Yu</a>.
 
-Previously, I worked under the guidance of <a href='https://angelicaiaviles.wordpress.com/'> Prof. Angelica Aviles-Rivero </a> at Cambridge University and Tsinghua University YMSC. I acted as an undergraduate research assistant in <a href='https://xiong-group.com/'> WiSe Lab</a> advised by <a href='https://xiong-group.com/people/'>Prof. Ze Xiong</a> from Sept. 2023 to Sept. 2024. I also interned at Shanghai AI Laboratory, focusing on large language models application.
+Previously, I worked under the guidance of <a href='https://angelicaiaviles.wordpress.com/'> Prof. Angelica Aviles-Rivero </a> at Cambridge University and Tsinghua University YMSC. I acted as an undergraduate research assistant in <a href='https://xiong-group.com/'> WiSe Lab</a> at ShanghaiTech University, advised by <a href='https://xiong-group.com/people/'>Prof. Ze Xiong</a> from Sept. 2023 to Sept. 2024. I also interned at Shanghai AI Laboratory, focusing on large language models application.
 
-This page is still under development. You can find me on [LinkedIn](https://www.linkedin.com/in/zhaoyining/)
+This page is still under development. You can find me on [Linkedin](https://www.linkedin.com/in/zhaoyining/)
 
 
