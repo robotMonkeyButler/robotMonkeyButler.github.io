@@ -38,7 +38,7 @@ export default function Home() {
             <div className="interests"><p className="small-label">RESEARCH INTERESTS</p><div>{profile.interests.map(interest => <span key={interest}>{interest}</span>)}</div></div>
           </section>
           <section id="publications" aria-labelledby="publications-heading">
-            <div className="section-heading"><h2 id="publications-heading">Publications<span className="section-count">{String(publications.length).padStart(2, '0')}</span></h2><span className="section-number">02</span></div>
+            <div className="section-heading"><h2 id="publications-heading">Publications</h2><span className="section-number">02</span></div>
             <div className="publication-list">{publications.map((paper, index) => <article className="publication" key={paper.id}>
               <div className="paper-image">{paper.image ? <img src={paper.image} alt={paper.imageAlt || `Figure for ${paper.title}`} width={440} height={300} loading="lazy" /> : <div className="figure-placeholder"><span className="figure-corner">FIG. {String(index + 1).padStart(2, '0')}</span><span className="figure-label">Research preview</span><span className="figure-caption">YOUR IMAGE HERE</span></div>}</div>
               <div className="paper-content">
