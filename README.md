@@ -28,6 +28,6 @@ npm run dev
 
 ## 调整外观
 
-`app/globals.css` 中的 `--primary` 控制深蓝强调色，`--serif` 控制标题字体。页面适配桌面和手机，支持键盘导航与减少动态效果的系统偏好。
+`app/globals.css` 中的 `--primary` 控制深蓝强调色，`--font-body` 控制全站字体。当前使用本地托管的 Inter 正体及斜体可变字体（来源：https://rsms.me/inter/），许可文件位于 `public/fonts/Inter-LICENSE.txt`；中文使用系统中文字体回退。页面适配桌面和手机，支持键盘导航与减少动态效果的系统偏好。
 
 信息结构参考 [Jon Barron](https://jonbarron.info/) 与 [Phillip Isola](https://web.mit.edu/phillipi/) 的学术主页。视觉样式与代码为本项目编写。
