@@ -18,7 +18,7 @@ export const profile = {
   scholar: 'https://scholar.google.com/citations?user=gYrXftkAAAAJ&hl=en', // Google Scholar 个人主页的完整链接
   introduction: [
     'I am currently a first-year M.S. student in Computer Science at University of Illinois Urbana-Champaign, working with Prof. [Jiaxuan You](https://jiaxuan.web.illinois.edu/), fully funded by Research Assistantship. My research interests lie in Countial Learning and World Modeling.',
-    'I previously got my Bachelor of Engineering degree School of Information Science and Technology at ShanghaiTech University in 06/2026. During my undergraduate years, I was fortunate to work with Prof. [Paul Liang](https://pliang279.github.io/) at MIT, Prof. [Angelica I. Aviles-Rivero](https://angelicaiaviles.wordpress.com/) at Cambridge and Prof. [Ze Xiong](https://xiong-group.com/people/) at ShanghaiTech.',
+    'I previously got my Bachelor of Engineering degree from School of Information Science and Technology at ShanghaiTech University in 06/2026. During my undergraduate years, I was fortunate to work with Prof. [Paul Liang](https://pliang279.github.io/) at MIT, Prof. [Angelica I. Aviles-Rivero](https://angelicaiaviles.wordpress.com/) at Cambridge and Prof. [Ze Xiong](https://xiong-group.com/people/) at ShanghaiTech.',
   ],
   interests: ['Social Simulation', 'Multiagent Systems', 'Agentic AI', 'Reinforcement Learning', 'LLM forecasting'],
 };
