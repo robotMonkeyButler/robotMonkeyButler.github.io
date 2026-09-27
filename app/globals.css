@@ -17,6 +17,14 @@
   src: url('/fonts/InterVariable-Italic.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('/fonts/SourceSerif4Variable-Roman.woff2') format('woff2');
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -24,8 +32,9 @@
   --color-border: var(--border);
   --font-sans: var(--font-body);
   --font-mono: var(--font-body);
+  --font-heading: var(--font-title);
 }
-:root { color-scheme: light; --background: #fff; --foreground: #222830; --primary: #244d71; --border: #e0e4e8; --muted: #f4f6f8; --muted-foreground: #65707d; --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+:root { color-scheme: light; --background: #fff; --foreground: #222830; --primary: #244d71; --border: #e0e4e8; --muted: #f4f6f8; --muted-foreground: #65707d; --font-title: 'Source Serif 4', 'Songti SC', 'SimSun', serif; --font-body: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
 * { box-sizing: border-box; }
 /* 全站字号：90% 比原版缩小 10%；改为 100% 可恢复。 */
 html { font-size: 90%; scroll-behavior: smooth; scroll-padding-top: 40px; }
@@ -48,10 +57,10 @@ p, h1, h2, h3 { margin: 0; }
 .portrait { width: 100%; aspect-ratio: 23 / 27; overflow: hidden; background: #edf1f4; }
 .portrait > img { width: 100%; height: 100%; object-fit: cover; }
 .photo-placeholder { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; border: 1px solid #e3e8ed; }
-.photo-initials { font-family: var(--font-body); font-size: 4.625rem; font-weight: 400; color: #8c9bab; letter-spacing: -.08em; padding-right: 8px; }
+.photo-initials { font-family: var(--font-title); font-size: 4.625rem; font-weight: 400; color: #8c9bab; letter-spacing: -.08em; padding-right: 8px; }
 .photo-initials > span { color: #315673; }
 .photo-label { position: absolute; bottom: 22px; font-size: 0.75rem; letter-spacing: .12em; color: #677889; }
-.profile h1 { font-family: var(--font-body); font-size: 2.125rem; line-height: 1.2; font-weight: 500; letter-spacing: -.8px; margin-top: 25px; }
+.profile h1 { font-family: var(--font-title); font-size: 2.125rem; line-height: 1.2; font-weight: 500; letter-spacing: -.8px; margin-top: 25px; }
 .native-name { color: #76808c; font-size: 0.875rem; letter-spacing: .12em; margin-top: 8px; }
 .role { color: var(--primary); margin-top: 23px; font-size: 0.875rem; font-weight: 500; line-height: 1.6; }
 .affiliation { font-size: 0.875rem; line-height: 1.85; color: #58616d; margin-top: 4px; }
@@ -66,7 +75,7 @@ p, h1, h2, h3 { margin: 0; }
 main { min-width: 0; }
 .section-kicker { display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; letter-spacing: .17em; color: var(--primary); padding-top: 3px; }
 .section-kicker > :last-child, .section-number { color: #7a8590; font-family: var(--font-body); font-size: 0.75rem; letter-spacing: .03em; }
-.intro-title { font-family: var(--font-body); font-size: clamp(2.375rem, 3.6vw, 3.1875rem); line-height: 1.2; letter-spacing: -1.7px; font-weight: 400; margin: 23px 0 25px; }
+.intro-title { font-family: var(--font-title); font-size: clamp(2.375rem, 3.6vw, 3.1875rem); line-height: 1.2; letter-spacing: -1.7px; font-weight: 400; margin: 23px 0 25px; }
 .intro-title > span { color: var(--primary); }
 .intro-copy { color: #58616b; font-size: 1rem; line-height: 1.9; max-width: 680px; }
 .intro-copy p + p { margin-top: 14px; }
@@ -76,7 +85,7 @@ main { min-width: 0; }
 .interests > div > span { font-size: 0.875rem; line-height: 1.6; padding: 4px 10px; color: #536576; background: var(--muted); border: 1px solid #e9edf1; }
 .intro-section { padding-bottom: 48px; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #c9d0d8; padding-top: 23px; margin-bottom: 29px; }
-.section-heading h2 { font-family: var(--font-body); font-size: 1.875rem; font-weight: 400; letter-spacing: -.6px; display: flex; align-items: center; gap: 12px; }
+.section-heading h2 { font-family: var(--font-title); font-size: 1.875rem; font-weight: 400; letter-spacing: -.6px; display: flex; align-items: center; gap: 12px; }
 .publication { display: grid; grid-template-columns: 192px minmax(0, 1fr); gap: 25px; padding: 0 0 28px; }
 .publication + .publication { padding-top: 28px; border-top: 1px solid #ebedf0; }
 .paper-image { aspect-ratio: 22 / 15; align-self: start; margin-top: 3px; background: #f2f5f7; overflow: hidden; border: 1px solid #e4e9ed; }
@@ -87,7 +96,7 @@ main { min-width: 0; }
 .figure-caption { font-size: 0.75rem; letter-spacing: .06em; color: #71808e; margin-top: 10px; }
 .venue { font-size: 0.75rem; font-weight: 500; color: var(--primary); letter-spacing: .035em; line-height: 1.6; }
 .venue > span { color: #8e9aa6; margin: 0 4px; }
-.publication h3 { font-family: var(--font-body); font-weight: 500; font-size: 1.3125rem; line-height: 1.35; margin-top: 7px; letter-spacing: -.25px; }
+.publication h3 { font-family: var(--font-title); font-weight: 500; font-size: 1.3125rem; line-height: 1.35; margin-top: 7px; letter-spacing: -.25px; }
 .authors { font-size: 0.875rem; color: #6e7b87; line-height: 1.8; margin-top: 7px; }
 .authors strong { font-weight: 500; color: #404c57; text-decoration: underline; text-decoration-color: #aab6c1; text-underline-offset: 3px; }
 .paper-summary { font-size: 1rem; color: #6a7580; line-height: 1.7; margin-top: 7px; }
@@ -98,7 +107,7 @@ main { min-width: 0; }
 .education-item { display: grid; grid-template-columns: 192px minmax(0, 1fr); gap: 25px; padding-bottom: 25px; }
 .education-item + .education-item { padding-top: 6px; }
 .education-period { font-family: var(--font-body); font-size: 0.75rem; color: #6d7d8b; padding-top: 5px; line-height: 1.7; }
-.education-item h3 { font-family: var(--font-body); font-weight: 500; font-size: 1.3125rem; line-height: 1.4; }
+.education-item h3 { font-family: var(--font-title); font-weight: 500; font-size: 1.3125rem; line-height: 1.4; }
 .degree { font-size: 1rem; color: #5d6975; line-height: 1.8; margin-top: 5px; }
 .education-detail { font-size: 0.875rem; color: #71808d; line-height: 1.7; margin-top: 3px; }
 footer { display: flex; justify-content: space-between; gap: 20px; padding: 23px 0 30px; margin-top: 30px; border-top: 1px solid var(--border); font-size: 0.75rem; color: #6f7b87; }
