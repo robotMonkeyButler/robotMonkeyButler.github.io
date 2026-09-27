@@ -1,9 +1,16 @@
-import { ArrowUpRight, Mail, MapPin, FileText, GraduationCap, GitFork as Github } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from '@/components/social-icons';
 import { profile, publications, education } from './content';
 import type { ReactNode } from 'react';
 
 function ResourceLink({ href, children, className = '' }: { href: string; children: ReactNode; className?: string }) {
   return href ? <a className={className} href={href}>{children}</a> : <span className={`${className} unfilled`} title="Add your link in app/content.ts">{children}</span>;
+}
+
+function SocialLink({ href, label, children }: { href: string; label: string; children: ReactNode }) {
+  if (!href.trim()) return <span className="social-link unfilled" role="link" aria-disabled="true" aria-label={label} title={`${label}（待填写链接）`}>{children}</span>;
+  const external = !href.startsWith('mailto:');
+  return <a className="social-link" href={href} aria-label={label} title={label} target={external ? '_blank' : undefined} rel={external ? 'noopener noreferrer' : undefined}>{children}</a>;
 }
 
 export default function Home() {
@@ -21,13 +28,11 @@ export default function Home() {
             <h1>{profile.name}</h1><p className="native-name">{profile.nativeName}</p>
             <p className="role">{profile.role}</p><p className="affiliation">{profile.department}<br />{profile.institution}</p>
             <p className="location"><MapPin size={14} strokeWidth={1.5} aria-hidden="true" />{profile.location}</p>
-            <div className="contact-links">
-              <ResourceLink href={profile.email ? `mailto:${profile.email}` : ''}><Mail size={16} strokeWidth={1.5} aria-hidden="true" /><span>{profile.email || 'Your email'}</span><ArrowUpRight size={14} aria-hidden="true" /></ResourceLink>
-              <ResourceLink href={profile.scholar}><GraduationCap size={17} strokeWidth={1.5} aria-hidden="true" /><span>Google Scholar</span><ArrowUpRight size={14} aria-hidden="true" /></ResourceLink>
-              <ResourceLink href={profile.github}><Github size={16} strokeWidth={1.5} aria-hidden="true" /><span>GitHub</span><ArrowUpRight size={14} aria-hidden="true" /></ResourceLink>
-              <ResourceLink className="cv-link" href={profile.cv}><FileText size={16} strokeWidth={1.5} aria-hidden="true" /><span>Curriculum vitae</span><ArrowUpRight size={14} aria-hidden="true" /></ResourceLink>
+            <div className="contact-links" role="group" aria-label="Contact and social profiles">
+              <SocialLink href={profile.email.trim() ? `mailto:${profile.email.trim()}` : ''} label="Email"><Mail size={18} strokeWidth={1.6} aria-hidden="true" /></SocialLink>
+              <SocialLink href={profile.github} label="GitHub"><GithubIcon /></SocialLink>
+              <SocialLink href={profile.linkedin} label="LinkedIn"><LinkedinIcon /></SocialLink>
             </div>
-            {profile.shortBio && <p className="sidebar-note">{profile.shortBio}</p>}
           </div>
         </aside>
         <main>

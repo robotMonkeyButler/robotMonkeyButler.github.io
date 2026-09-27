@@ -2,8 +2,8 @@
 // 图片放在 public/images/，路径填写为 '/images/文件名.jpg'。
 // 空链接显示为占位文字，填写后自动成为可点击链接。
 export const profile = {
-  name: 'Your Name',
-  nativeName: '你的中文名',
+  name: 'Yining Zhao',
+  nativeName: '赵乙凝',
   initials: 'YN',
   role: '[Your position / title]',
   department: '[Department]',
@@ -11,10 +11,8 @@ export const profile = {
   location: '[City, Country]',
   photo: '',
   email: '',
-  scholar: '',
   github: '',
-  cv: '', // 例如 '/cv.pdf'，对应 public/cv.pdf
-  shortBio: '[A short personal introduction or a few words about your research.]',
+  linkedin: '',
   introduction: [
     'I am a [position] at [institution], working with [advisor / collaborators]. My research focuses on [your research area].',
     'I am interested in [the questions you explore] and [the methods you work with]. Previously, I [a sentence about your background or experience].',
