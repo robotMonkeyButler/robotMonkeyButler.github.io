@@ -13,6 +13,8 @@ export const profile = {
   email: '',
   github: '',
   linkedin: '',
+  x: '', // 例如 'https://x.com/your_username'
+  scholar: '', // Google Scholar 个人主页的完整链接
   introduction: [
     'I am a [position] at [institution], working with [advisor / collaborators]. My research focuses on [your research area].',
     'I am interested in [the questions you explore] and [the methods you work with]. Previously, I [a sentence about your background or experience].',

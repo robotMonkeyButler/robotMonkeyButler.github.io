@@ -9,7 +9,7 @@
 - 照片：放到 `public/images/portrait.jpg`，把 `profile.photo` 改为 `/images/portrait.jpg`。
 - 论文配图：放到 `public/images/`，填写对应论文的 `image` 路径和 `imageAlt` 图片说明。
 - 邮箱：直接填写邮箱地址，无需 `mailto:`。
-- 侧栏联系方式：填写 `email`、`github`、`linkedin`，对应信封、GitHub 和 LinkedIn 图标。邮箱直接填写地址，GitHub 和 LinkedIn 填写完整 URL。留空时图标不可点击；悬停显示名称。
+- 侧栏联系方式：填写 `email`、`github`、`linkedin`、`x`、`scholar`，对应 Email、GitHub、LinkedIn、X 和 Google Scholar 图标。邮箱直接填写地址，其他字段填写个人主页的完整 URL。留空时图标不可点击；悬停显示名称。
 - 论文链接：填写完整 URL。留空保持不可点击的占位文字。
 - 添加论文：复制 `publications` 中的一条，给它不同的 `id`。
 - 作者的 `self: true` 表示你自己，会有特别的文字标记。

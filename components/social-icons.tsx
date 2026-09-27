@@ -1,5 +1,7 @@
-// Brand icon paths from Lucide v0.468.0; see public/icons/LICENSE.txt.
+// GitHub and LinkedIn paths from Lucide v0.468.0; see public/icons/LICENSE.txt.
 // https://github.com/lucide-icons/lucide/tree/0.468.0/icons
+// X and Google Scholar paths from Simple Icons (CC0-1.0):
+// https://github.com/simple-icons/simple-icons/tree/develop/icons
 const iconProps = {
   xmlns: 'http://www.w3.org/2000/svg',
   width: 18,
@@ -26,5 +28,17 @@ export function LinkedinIcon() {
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
     <rect width="4" height="12" x="2" y="9" />
     <circle cx="4" cy="4" r="2" />
+  </svg>;
+}
+
+export function XIcon() {
+  return <svg {...iconProps} fill="currentColor" stroke="none">
+    <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z" />
+  </svg>;
+}
+
+export function GoogleScholarIcon() {
+  return <svg {...iconProps} fill="currentColor" stroke="none">
+    <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
   </svg>;
 }

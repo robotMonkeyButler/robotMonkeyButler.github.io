@@ -1,5 +1,5 @@
 import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '@/components/social-icons';
+import { GithubIcon, LinkedinIcon, XIcon, GoogleScholarIcon } from '@/components/social-icons';
 import { profile, publications, education } from './content';
 import type { ReactNode } from 'react';
 
@@ -32,6 +32,8 @@ export default function Home() {
               <SocialLink href={profile.email.trim() ? `mailto:${profile.email.trim()}` : ''} label="Email"><Mail size={18} strokeWidth={1.6} aria-hidden="true" /></SocialLink>
               <SocialLink href={profile.github} label="GitHub"><GithubIcon /></SocialLink>
               <SocialLink href={profile.linkedin} label="LinkedIn"><LinkedinIcon /></SocialLink>
+              <SocialLink href={profile.x} label="X"><XIcon /></SocialLink>
+              <SocialLink href={profile.scholar} label="Google Scholar"><GoogleScholarIcon /></SocialLink>
             </div>
           </div>
         </aside>
