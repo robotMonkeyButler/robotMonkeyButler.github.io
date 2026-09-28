@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robotmonkeybutler.github.io/sitemap.xml
