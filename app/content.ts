@@ -17,10 +17,10 @@ export const profile = {
   x: 'https://x.com/YiningZhao22395', // 例如 'https://x.com/your_username'
   scholar: 'https://scholar.google.com/citations?user=gYrXftkAAAAJ&hl=en', // Google Scholar 个人主页的完整链接
   introduction: [
-    'I am currently a first-year M.S. student in Computer Science at University of Illinois Urbana-Champaign, working with Prof. [Jiaxuan You](https://jiaxuan.web.illinois.edu/), fully funded by Graduate Research Assistantship. My research interests lie in Continual Learning and World Modeling.',
+    'I am currently a first-year M.S. student in Computer Science at University of Illinois Urbana-Champaign, working with Prof. [Jiaxuan You](https://jiaxuan.web.illinois.edu/), fully funded by Graduate Research Assistantship. My research interests lie in Continual Learning, Collective Intelligence and World Modeling.',
     'Before UIUC, I got my Bachelor of Engineering degree from ShanghaiTech University in 06/2026. I was fortunate to work with Prof. [Paul Liang](https://pliang279.github.io/) at MIT, Prof. [Angelica I. Aviles-Rivero](https://angelicaiaviles.wordpress.com/) at Cambridge and Prof. [Ze Xiong](https://xiong-group.com/people/) at ShanghaiTech.',
   ],
-  interests: ['Social Simulation', 'Multiagent Systems', 'Agentic AI', 'Reinforcement Learning', 'LLM forecasting'],
+  interests: ['Collective Intelligence', 'Social Simulation', 'Multiagent Systems', 'Agentic AI', 'Reinforcement Learning', 'LLM forecasting'],
 };
 
 // authors 直接填写整行作者；**姓名** 加粗，姓名后加 * 标注共同贡献。
@@ -28,6 +28,15 @@ export const profile = {
 // 例如：'Haofei Yu*, **Yining Zhao***, Lenore Blum, Manuel Blum, Paul Pu Liang'
 // imageRatio 留空时，外框自动贴合原图比例；也可填 '2 / 1'、'1 / 1' 手动指定外框比例。
 export const publications = [
+  {
+    id: 'paper-0',
+    title: 'Learning to Simulate Individuals from Macro Social Signals',
+    authors: '**Yining Zhao**, Bushi Liu, Haofei Yu, Zhengyang Qi, Shanyong Wang, Chuyue Li, Yuxiang Liu, Jiaxuan You',
+    venue: 'Under Review',
+    image: '/images/macro2mind.png', imageAlt: '',
+    imageRatio: '',
+    links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2605.04097'}],
+  },
   {
     id: 'paper-1',
     title: 'CTM-AI: A Blueprint for General AI Inspired by a Model of Consciousness',
