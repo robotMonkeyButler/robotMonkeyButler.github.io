@@ -35,7 +35,7 @@ export const publications = [
     venue: 'Under Review',
     image: '/images/macro2mind.png', imageAlt: '',
     imageRatio: '',
-    links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2605.04097'}],
+    links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2610.07062' }],
   },
   {
     id: 'paper-1',
