@@ -39,7 +39,7 @@ export const publications = [
   },
   {
     id: 'paper-1',
-    title: 'CTM-AI: A Blueprint for General AI Inspired by a Model of Consciousness',
+    title: 'CTM-AI: Evolving Multi-Agent Intelligence Inspired by a Model of Consciousness',
     authors: 'Haofei Yu*, **Yining Zhao***, Lenore Blum, Manuel Blum, Paul Pu Liang',
     venue: 'The 40th Annual Conference on Neural Information Processing Systems (NeurIPS 2026)',
     image: '/images/ctm.png', imageAlt: '',
