@@ -17,10 +17,10 @@ export const profile = {
   x: 'https://x.com/YiningZhao22395', // 例如 'https://x.com/your_username'
   scholar: 'https://scholar.google.com/citations?user=gYrXftkAAAAJ&hl=en', // Google Scholar 个人主页的完整链接
   introduction: [
-    'I am currently a first-year M.S. student in Computer Science at University of Illinois Urbana-Champaign, working with Prof. [Jiaxuan You](https://jiaxuan.web.illinois.edu/), fully funded by Graduate Research Assistantship. My research interests lie in Continual Learning, Collective Intelligence and World Modeling.',
+    'I am currently a M.S. student in Computer Science at University of Illinois Urbana-Champaign, working with Prof. [Jiaxuan You](https://jiaxuan.web.illinois.edu/), fully funded by Graduate Research Assistantship. My research interests lie in Continual Learning, Collective Intelligence and World Modeling.',
     'Before UIUC, I got my Bachelor of Engineering degree from ShanghaiTech University in 06/2026. I was fortunate to work with Prof. [Paul Liang](https://pliang279.github.io/) at MIT, Prof. [Angelica I. Aviles-Rivero](https://angelicaiaviles.wordpress.com/) at Cambridge and Prof. [Ze Xiong](https://xiong-group.com/people/) at ShanghaiTech.',
   ],
-  interests: ['Collective Intelligence', 'Social Simulation', 'Multiagent Systems', 'Agentic AI', 'Reinforcement Learning', 'LLM forecasting'],
+  interests: ['Social Simulation', 'Multiagent Systems', 'Agentic AI', 'Reinforcement Learning', 'LLM forecasting','Collective Intelligence'],
 };
 
 // authors 直接填写整行作者；**姓名** 加粗，姓名后加 * 标注共同贡献。
@@ -35,7 +35,7 @@ export const publications = [
     venue: 'Under Review',
     image: '/images/macro2mind.png', imageAlt: '',
     imageRatio: '',
-    links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2610.07062' }],
+    links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2610.07062' }, { label: 'Code', url: 'https://github.com/ulab-uiuc/social-world-model' }],
   },
   {
     id: 'paper-1',
@@ -65,8 +65,17 @@ export const publications = [
     imageRatio: '',
     links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2606.11482' }, { label: 'Code', url: 'https://github.com/ulab-uiuc/social-world-model' }, { label: 'Data', url: 'https://huggingface.co/datasets/ulab-ai/swm-bench' }],
   },
-  {
+    {
     id: 'paper-4',
+    title: 'Co-evolving Acting and Forecasting for Language Agents',
+    authors: 'Haofei Yu, Yixing Chen, **Yining Zhao**, Xuyan Ye, Yuxiang Liu, Zhigang Hua, Yan Xie, Shuang Yang, Jiaxuan You',
+    venue: 'Under Review',
+    image: '/images/cope.png', imageAlt: '',
+    imageRatio: '',
+    links: [{ label: 'Paper', url: 'https://arxiv.org/pdf/2610.20597' }, { label: 'Code', url: 'https://github.com/ulab-uiuc/CoPE' }],
+  },
+  {
+    id: 'paper-5',
     title: 'Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents',
     authors: 'Chongrui Ye, Yuxiang Liu, Yu Wang, Haofei Yu, **Yining Zhao**, Ge Liu, Julian McAuley, Jiaxuan You',
     venue: 'The 40th Annual Conference on Neural Information Processing Systems (NeurIPS 2026)',
@@ -75,7 +84,7 @@ export const publications = [
     links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2605.20616' }],
   },
   {
-    id: 'paper-5',
+    id: 'paper-6',
     title: 'Can Large Language Models Forecast What Researchers Study Next?',
     authors: 'Fenghai Li, Zihan Tang, Haofei Yu, **Yining Zhao**, Jiaxuan You',
     venue: 'The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 main)',
@@ -84,7 +93,7 @@ export const publications = [
     links: [{ label: 'Paper', url: 'https://arxiv.org/abs/2605.20616' }],
   },
   {
-    id: 'paper-6',
+    id: 'paper-7',
     title: 'Implicit U-KAN: Dynamic, Efficient and Interpretable Medical Image Segmentation',
     authors: 'Chun-Wun Cheng*, **Yining Zhao***, Yanqi Cheng, Javier A. Montoya-Zegarra, Carola-Bibiane Schönlieb, Angelica I Aviles-Rivero',
     venue: 'The 28th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2025)',
